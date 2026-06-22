@@ -1,0 +1,51 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260620_144515
+====================================================================================================
+
+1     |Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+1     |Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+1     |Info:    [ProfileManager] Found file: warm-yellow-mouse-only.orp attempting to validate header
+1     |Info:    [ProfileManager] Valid v5 profile found for warm-yellow-mouse-only
+1     |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+1     |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+9     |Info:    [ResourceManager] Initializing HID interfaces: Success
+9     |Info:    ------------------------------------------------------
+9     |Info:    |               Start device detection               |
+9     |Info:    ------------------------------------------------------
+12    |Info:    ------------------------------------------------------
+12    |Info:    |             Detecting I2C interfaces               |
+12    |Info:    ------------------------------------------------------
+12    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+12    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+12    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+12    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+12    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+12    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+12    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+12    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+12    |Info:    ------------------------------------------------------
+12    |Info:    |               Detecting I2C devices                |
+12    |Info:    ------------------------------------------------------
+3392  |Info:    ------------------------------------------------------
+3392  |Info:    |            Detecting I2C DIMM modules              |
+3392  |Info:    ------------------------------------------------------
+4728  |Info:    ------------------------------------------------------
+4728  |Info:    |               Detecting I2C PCI devices            |
+4728  |Info:    ------------------------------------------------------
+4729  |Info:    ------------------------------------------------------
+4729  |Info:    |               Detecting HID devices                |
+4729  |Info:    ------------------------------------------------------
+4780  |Info:    [ROYUAN Akko Multi-modes Keyboard-B] Registering RGB controller
+4783  |Info:    [Logitech G203 Lightsync] Registering RGB controller
+4783  |Info:    ------------------------------------------------------
+4783  |Info:    |            Detecting libusb HID devices            |
+4783  |Info:    ------------------------------------------------------
+4791  |Info:    ------------------------------------------------------
+4791  |Info:    |              Detecting other devices               |
+4791  |Info:    ------------------------------------------------------
+4799  |Info:    [ResourceManager] Calling Post-detection callbacks
+4799  |Info:    ------------------------------------------------------
+4799  |Info:    |                Detection completed                 |
+4799  |Info:    ------------------------------------------------------
+4799  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>

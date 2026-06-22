@@ -1,0 +1,26 @@
+layout {
+    tab name="editor" {
+        pane edit="~/BSUIR-labs/OSiSP"
+
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+    }
+    tab name="debug" {
+        pane split_direction="horizontal" {
+
+            pane split_direction="vertical" {
+                // pane command="make" {
+                //     start_suspended true
+                // }
+                pane cwd="~/BSUIR-labs/OSiSP"
+                pane cwd="~/BSUIR-labs/OSiSP"
+            }
+            pane size=1 borderless=true {
+                plugin location="zellij:compact-bar"
+            }
+        }
+    }
+    
+}
+

@@ -1,0 +1,54 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260328_142551
+====================================================================================================
+
+1     |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+1     |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+1087  |Info:    [ResourceManager] Initializing HID interfaces: Success
+1087  |Info:    ------------------------------------------------------
+1087  |Info:    |               Start device detection               |
+1087  |Info:    ------------------------------------------------------
+1088  |Info:    ------------------------------------------------------
+1088  |Info:    |             Detecting I2C interfaces               |
+1088  |Info:    ------------------------------------------------------
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 8086:A78B Subsystem: 17AA:3D07
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 8086:A78B Subsystem: 17AA:3D07
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 8086:A78B Subsystem: 17AA:3D07
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:A78B Subsystem: 17AA:3D07
+1089  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 0000:0000 Subsystem: 0000:0000
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 8086:A78B Subsystem: 17AA:3D07
+1089  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 0000:0000 Subsystem: 0000:0000
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 8086:A78B Subsystem: 17AA:3D07
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 8086:A78B Subsystem: 17AA:3D07
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 8086:A78B Subsystem: 17AA:3D07
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 8086:7A23 Subsystem: 17AA:3807
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 8086:A78B Subsystem: 17AA:3D07
+1089  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1089  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 0000:0000 Subsystem: 0000:0000
+1089  |Info:    ------------------------------------------------------
+1089  |Info:    |               Detecting I2C devices                |
+1089  |Info:    ------------------------------------------------------
+4558  |Info:    ------------------------------------------------------
+4558  |Info:    |            Detecting I2C DIMM modules              |
+4558  |Info:    ------------------------------------------------------
+5895  |Info:    ------------------------------------------------------
+5895  |Info:    |               Detecting I2C PCI devices            |
+5895  |Info:    ------------------------------------------------------
+5895  |Info:    ------------------------------------------------------
+5895  |Info:    |               Detecting HID devices                |
+5895  |Info:    ------------------------------------------------------
+5895  |Info:    ------------------------------------------------------
+5895  |Info:    |            Detecting libusb HID devices            |
+5895  |Info:    ------------------------------------------------------
+5898  |Info:    ------------------------------------------------------
+5898  |Info:    |              Detecting other devices               |
+5898  |Info:    ------------------------------------------------------
+5909  |Info:    [ResourceManager] Calling Post-detection callbacks
+5909  |Info:    ------------------------------------------------------
+5909  |Info:    |                Detection completed                 |
+5909  |Info:    ------------------------------------------------------

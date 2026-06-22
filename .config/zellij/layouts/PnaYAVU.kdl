@@ -1,0 +1,23 @@
+layout {
+    tab name="editor" {
+        pane edit="~/BSUIR-labs/PnaYAVU"
+
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+    }
+    tab name="git & launch" {
+        pane split_direction="horizontal" {
+
+            pane split_direction="vertical" {
+                pane cwd="~/BSUIR-labs/PnaYAVU"
+                pane cwd="~/BSUIR-labs/PnaYAVU"
+            }
+            pane size=1 borderless=true {
+                plugin location="zellij:compact-bar"
+            }
+        }
+    }
+    
+}
+

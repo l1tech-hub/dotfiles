@@ -1,0 +1,23 @@
+layout {
+    tab name="editor" {
+        pane edit="~/Programming"
+
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+    }
+    tab name="main" {
+        pane split_direction="horizontal" {
+
+            pane split_direction="vertical" {
+                pane cwd="~/Programming"
+                pane cwd="~/Programming"
+            }
+            pane size=1 borderless=true {
+                plugin location="zellij:compact-bar"
+            }
+        }
+    }
+    
+}
+

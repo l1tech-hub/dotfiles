@@ -1,0 +1,62 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260407_123621
+====================================================================================================
+
+1     |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+2     |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+1086  |Info:    [ResourceManager] Initializing HID interfaces: Success
+1086  |Info:    ------------------------------------------------------
+1086  |Info:    |               Start device detection               |
+1086  |Info:    ------------------------------------------------------
+1091  |Info:    ------------------------------------------------------
+1091  |Info:    |             Detecting I2C interfaces               |
+1091  |Info:    ------------------------------------------------------
+1091  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 8086:A78B Subsystem: 17AA:3D07
+1091  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 8086:A78B Subsystem: 17AA:3D07
+1091  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 8086:A78B Subsystem: 17AA:3D07
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:A78B Subsystem: 17AA:3D07
+1092  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 0000:0000 Subsystem: 0000:0000
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 8086:A78B Subsystem: 17AA:3D07
+1092  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 0000:0000 Subsystem: 0000:0000
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 8086:A78B Subsystem: 17AA:3D07
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 8086:A78B Subsystem: 17AA:3D07
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 8086:A78B Subsystem: 17AA:3D07
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 8086:7A23 Subsystem: 17AA:3807
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 8086:A78B Subsystem: 17AA:3D07
+1092  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1092  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 0000:0000 Subsystem: 0000:0000
+1092  |Info:    ------------------------------------------------------
+1092  |Info:    |               Detecting I2C devices                |
+1092  |Info:    ------------------------------------------------------
+1533  |Info:    ------------------------------------------------------
+1533  |Info:    |            Detecting I2C DIMM modules              |
+1533  |Info:    ------------------------------------------------------
+1544  |Info:    [ResourceManager] Detected occupied slot 1, bus 13, type óúUH‰åAWAVI‰öAUATSHƒì(H‹Ÿø
+1549  |Info:    [ResourceManager] Detected occupied slot 3, bus 13, type óúUH‰åAWAVI‰öAUATSHƒì(H‹Ÿø
+1549  |Info:    ------------------------------------------------------
+1549  |Info:    |               Detecting I2C PCI devices            |
+1549  |Info:    ------------------------------------------------------
+1550  |Info:    ------------------------------------------------------
+1550  |Info:    |               Detecting HID devices                |
+1550  |Info:    ------------------------------------------------------
+1601  |Info:    [ROYUAN Akko Multi-modes Keyboard-B] Registering RGB controller
+1605  |Info:    [Logitech G203 Lightsync] Registering RGB controller
+1605  |Info:    ------------------------------------------------------
+1605  |Info:    |            Detecting libusb HID devices            |
+1605  |Info:    ------------------------------------------------------
+1612  |Info:    ------------------------------------------------------
+1612  |Info:    |              Detecting other devices               |
+1612  |Info:    ------------------------------------------------------
+1624  |Info:    [ResourceManager] Calling Post-detection callbacks
+1624  |Info:    ------------------------------------------------------
+1624  |Info:    |                Detection completed                 |
+1624  |Info:    ------------------------------------------------------
+1624  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+1625  |Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+1625  |Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4

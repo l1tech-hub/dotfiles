@@ -1,0 +1,85 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260619_130124
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+0     |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+54    |Info:    [ResourceManager] Initializing HID interfaces: Success
+54    |Info:    ------------------------------------------------------
+54    |Info:    |               Start device detection               |
+54    |Info:    ------------------------------------------------------
+56    |Info:    ------------------------------------------------------
+56    |Info:    |             Detecting I2C interfaces               |
+56    |Info:    ------------------------------------------------------
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+57    |Info:    ------------------------------------------------------
+57    |Info:    |               Detecting I2C devices                |
+57    |Info:    ------------------------------------------------------
+3468  |Info:    ------------------------------------------------------
+3468  |Info:    |            Detecting I2C DIMM modules              |
+3468  |Info:    ------------------------------------------------------
+4804  |Info:    ------------------------------------------------------
+4804  |Info:    |               Detecting I2C PCI devices            |
+4804  |Info:    ------------------------------------------------------
+4805  |Info:    ------------------------------------------------------
+4805  |Info:    |               Detecting HID devices                |
+4805  |Info:    ------------------------------------------------------
+4857  |Info:    [ROYUAN Akko Multi-modes Keyboard-B] Registering RGB controller
+4859  |Info:    [Logitech G203 Lightsync] Registering RGB controller
+4859  |Info:    ------------------------------------------------------
+4859  |Info:    |            Detecting libusb HID devices            |
+4859  |Info:    ------------------------------------------------------
+4864  |Info:    ------------------------------------------------------
+4864  |Info:    |              Detecting other devices               |
+4864  |Info:    ------------------------------------------------------
+4887  |Info:    [ResourceManager] Calling Post-detection callbacks
+4887  |Info:    ------------------------------------------------------
+4887  |Info:    |                Detection completed                 |
+4887  |Info:    ------------------------------------------------------
+4887  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+41701 |Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+41701 |Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+72380 |Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+72380 |Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+72380 |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+72380 |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+73230 |Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+73230 |Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+85122 |Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+85122 |Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+85122 |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+85122 |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+85741 |Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+85741 |Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+107673|Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+107673|Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+107673|Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+107673|Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+111320|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+111320|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+133119|Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+133119|Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+133119|Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+133119|Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+133268|Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+133268|Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+133268|Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+133268|Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+136478|Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+136478|Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+136478|Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+136478|Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+142210|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+142210|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+142461|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+142461|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4

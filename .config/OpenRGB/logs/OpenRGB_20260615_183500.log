@@ -1,0 +1,51 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260615_183500
+====================================================================================================
+
+1     |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+2     |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+1082  |Info:    [ResourceManager] Initializing HID interfaces: Success
+1082  |Info:    ------------------------------------------------------
+1082  |Info:    |               Start device detection               |
+1082  |Info:    ------------------------------------------------------
+1085  |Info:    ------------------------------------------------------
+1085  |Info:    |             Detecting I2C interfaces               |
+1085  |Info:    ------------------------------------------------------
+1085  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+1085  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+1085  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+1085  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+1085  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+1085  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+1085  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1085  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+1085  |Info:    ------------------------------------------------------
+1085  |Info:    |               Detecting I2C devices                |
+1085  |Info:    ------------------------------------------------------
+1394  |Info:    ------------------------------------------------------
+1394  |Info:    |            Detecting I2C DIMM modules              |
+1394  |Info:    ------------------------------------------------------
+1402  |Info:    [ResourceManager] Detected occupied slot 1, bus 2, type Key: Number Pad 2
+1404  |Info:    [ResourceManager] Detected occupied slot 3, bus 2, type Key: Number Pad 2
+1404  |Info:    ------------------------------------------------------
+1404  |Info:    |               Detecting I2C PCI devices            |
+1404  |Info:    ------------------------------------------------------
+1405  |Info:    ------------------------------------------------------
+1405  |Info:    |               Detecting HID devices                |
+1405  |Info:    ------------------------------------------------------
+1455  |Info:    [ROYUAN Akko Multi-modes Keyboard-B] Registering RGB controller
+1458  |Info:    [Logitech G203 Lightsync] Registering RGB controller
+1458  |Info:    ------------------------------------------------------
+1458  |Info:    |            Detecting libusb HID devices            |
+1458  |Info:    ------------------------------------------------------
+1466  |Info:    ------------------------------------------------------
+1466  |Info:    |              Detecting other devices               |
+1466  |Info:    ------------------------------------------------------
+1476  |Info:    [ResourceManager] Calling Post-detection callbacks
+1476  |Info:    ------------------------------------------------------
+1476  |Info:    |                Detection completed                 |
+1476  |Info:    ------------------------------------------------------
+1476  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+1477  |Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+1477  |Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4

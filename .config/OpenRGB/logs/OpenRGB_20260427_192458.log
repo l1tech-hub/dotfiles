@@ -1,0 +1,192 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260427_192458
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+53    |Info:    [ResourceManager] Initializing HID interfaces: Success
+53    |Info:    ------------------------------------------------------
+53    |Info:    |               Start device detection               |
+53    |Info:    ------------------------------------------------------
+56    |Info:    ------------------------------------------------------
+56    |Info:    |             Detecting I2C interfaces               |
+56    |Info:    ------------------------------------------------------
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 8086:A78B Subsystem: 17AA:3D07
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 8086:A78B Subsystem: 17AA:3D07
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 8086:A78B Subsystem: 17AA:3D07
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:A78B Subsystem: 17AA:3D07
+56    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 0000:0000 Subsystem: 0000:0000
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 8086:A78B Subsystem: 17AA:3D07
+56    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 0000:0000 Subsystem: 0000:0000
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 8086:A78B Subsystem: 17AA:3D07
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 8086:A78B Subsystem: 17AA:3D07
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 8086:A78B Subsystem: 17AA:3D07
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 8086:7A23 Subsystem: 17AA:3807
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 8086:A78B Subsystem: 17AA:3D07
+56    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+56    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 0000:0000 Subsystem: 0000:0000
+56    |Info:    ------------------------------------------------------
+56    |Info:    |               Detecting I2C devices                |
+56    |Info:    ------------------------------------------------------
+3579  |Info:    ------------------------------------------------------
+3579  |Info:    |            Detecting I2C DIMM modules              |
+3579  |Info:    ------------------------------------------------------
+3611  |Info:    [ResourceManager] Detected occupied slot 1, bus 13, type óúU‰ÒHkÒhH‰åSHƒì(H–ø
+3653  |Info:    [ResourceManager] Detected occupied slot 3, bus 13, type óúU‰ÒHkÒhH‰åSHƒì(H–ø
+3653  |Info:    ------------------------------------------------------
+3653  |Info:    |               Detecting I2C PCI devices            |
+3653  |Info:    ------------------------------------------------------
+3654  |Info:    ------------------------------------------------------
+3654  |Info:    |               Detecting HID devices                |
+3654  |Info:    ------------------------------------------------------
+3706  |Info:    [ROYUAN Akko Multi-modes Keyboard-B] Registering RGB controller
+3708  |Info:    [Logitech G203 Lightsync] Registering RGB controller
+3708  |Info:    ------------------------------------------------------
+3708  |Info:    |            Detecting libusb HID devices            |
+3708  |Info:    ------------------------------------------------------
+3714  |Info:    ------------------------------------------------------
+3714  |Info:    |              Detecting other devices               |
+3714  |Info:    ------------------------------------------------------
+3722  |Info:    [ResourceManager] Calling Post-detection callbacks
+3722  |Info:    ------------------------------------------------------
+3722  |Info:    |                Detection completed                 |
+3722  |Info:    ------------------------------------------------------
+3722  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+6570  |Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+6570  |Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+195579|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+195579|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+268377|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+268377|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+268501|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+268501|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+270159|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+270159|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+270860|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272576|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272578|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272586|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272588|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272591|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272596|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272597|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272601|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272603|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272605|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272606|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272610|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272612|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272614|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272615|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272616|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272617|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272619|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272620|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272621|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272623|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272624|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272627|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272629|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272631|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272632|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272633|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272635|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272636|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272637|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272638|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272640|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272641|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272644|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272647|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272648|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272650|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272653|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272656|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272657|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272659|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272660|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272662|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272664|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272667|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272668|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272670|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272672|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272673|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272676|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272680|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+272681|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274009|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274013|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274065|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274078|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274084|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274093|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274098|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274105|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274110|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274113|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274115|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274122|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274128|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274134|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274140|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274147|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274151|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274159|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274164|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274172|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274177|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274183|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274189|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274195|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274201|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274207|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274212|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274219|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274225|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274233|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274241|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274251|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274259|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274271|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274283|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274295|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274315|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274379|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274544|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274575|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+274603|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+275233|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+276449|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+277593|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+282097|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+282097|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+283170|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+283692|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+283692|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+319041|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+319041|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+319042|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+506148|Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+506148|Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+512407|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+512407|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+512409|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+514534|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+514534|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+514535|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+514698|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+514699|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+514701|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+514872|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+514872|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+514873|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device
+515033|Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+515033|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
+515034|ERROR:   [EPOMAKER]: Send Buffer Error. HIDAPI Error: ioctl (SFEATURE): No such device

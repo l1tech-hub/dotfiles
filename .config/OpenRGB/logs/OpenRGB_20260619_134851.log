@@ -1,0 +1,900 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260619_134851
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+0     |Info:    [ProfileManager] Found file: warm-yellow-2.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for warm-yellow-2
+0     |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+54    |Info:    [ResourceManager] Initializing HID interfaces: Success
+54    |Info:    ------------------------------------------------------
+54    |Info:    |               Start device detection               |
+54    |Info:    ------------------------------------------------------
+57    |Info:    ------------------------------------------------------
+57    |Info:    |             Detecting I2C interfaces               |
+57    |Info:    ------------------------------------------------------
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+57    |Info:    ------------------------------------------------------
+57    |Info:    |               Detecting I2C devices                |
+57    |Info:    ------------------------------------------------------
+57    |Info:    ------------------------------------------------------
+57    |Info:    |            Detecting I2C DIMM modules              |
+57    |Info:    ------------------------------------------------------
+57    |Info:    ------------------------------------------------------
+57    |Info:    |               Detecting I2C PCI devices            |
+57    |Info:    ------------------------------------------------------
+57    |Info:    ------------------------------------------------------
+57    |Info:    |               Detecting HID devices                |
+57    |Info:    ------------------------------------------------------
+57    |Info:    ------------------------------------------------------
+57    |Info:    |            Detecting libusb HID devices            |
+57    |Info:    ------------------------------------------------------
+63    |Info:    ------------------------------------------------------
+63    |Info:    |              Detecting other devices               |
+63    |Info:    ------------------------------------------------------
+63    |Info:    [ResourceManager] Calling Post-detection callbacks
+63    |Info:    ------------------------------------------------------
+63    |Info:    |                Detection completed                 |
+63    |Info:    ------------------------------------------------------
+63    |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+3761  |Info:    [ResourceManager] Initializing HID interfaces: Success
+3761  |Info:    ------------------------------------------------------
+3761  |Info:    |               Start device detection               |
+3761  |Info:    ------------------------------------------------------
+3764  |Info:    ------------------------------------------------------
+3764  |Info:    |             Detecting I2C interfaces               |
+3764  |Info:    ------------------------------------------------------
+3764  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+3764  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+3764  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+3764  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+3764  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+3765  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+3765  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+3765  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+3765  |Info:    ------------------------------------------------------
+3765  |Info:    |               Detecting I2C devices                |
+3765  |Info:    ------------------------------------------------------
+3765  |Info:    ------------------------------------------------------
+3765  |Info:    |            Detecting I2C DIMM modules              |
+3765  |Info:    ------------------------------------------------------
+3765  |Info:    ------------------------------------------------------
+3765  |Info:    |               Detecting I2C PCI devices            |
+3765  |Info:    ------------------------------------------------------
+3765  |Info:    ------------------------------------------------------
+3765  |Info:    |               Detecting HID devices                |
+3765  |Info:    ------------------------------------------------------
+3765  |Info:    ------------------------------------------------------
+3765  |Info:    |            Detecting libusb HID devices            |
+3765  |Info:    ------------------------------------------------------
+3769  |Info:    ------------------------------------------------------
+3769  |Info:    |              Detecting other devices               |
+3769  |Info:    ------------------------------------------------------
+3769  |Info:    [ResourceManager] Calling Post-detection callbacks
+3769  |Info:    ------------------------------------------------------
+3769  |Info:    |                Detection completed                 |
+3769  |Info:    ------------------------------------------------------
+3769  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+4141  |Info:    [ResourceManager] Initializing HID interfaces: Success
+4141  |Info:    ------------------------------------------------------
+4141  |Info:    |               Start device detection               |
+4141  |Info:    ------------------------------------------------------
+4144  |Info:    ------------------------------------------------------
+4144  |Info:    |             Detecting I2C interfaces               |
+4144  |Info:    ------------------------------------------------------
+4144  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+4144  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+4144  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+4144  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+4144  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+4144  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+4144  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+4144  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+4144  |Info:    ------------------------------------------------------
+4144  |Info:    |               Detecting I2C devices                |
+4144  |Info:    ------------------------------------------------------
+4144  |Info:    ------------------------------------------------------
+4144  |Info:    |            Detecting I2C DIMM modules              |
+4144  |Info:    ------------------------------------------------------
+4144  |Info:    ------------------------------------------------------
+4144  |Info:    |               Detecting I2C PCI devices            |
+4144  |Info:    ------------------------------------------------------
+4145  |Info:    ------------------------------------------------------
+4145  |Info:    |               Detecting HID devices                |
+4145  |Info:    ------------------------------------------------------
+4145  |Info:    ------------------------------------------------------
+4145  |Info:    |            Detecting libusb HID devices            |
+4145  |Info:    ------------------------------------------------------
+4148  |Info:    ------------------------------------------------------
+4148  |Info:    |              Detecting other devices               |
+4148  |Info:    ------------------------------------------------------
+4148  |Info:    [ResourceManager] Calling Post-detection callbacks
+4148  |Info:    ------------------------------------------------------
+4148  |Info:    |                Detection completed                 |
+4148  |Info:    ------------------------------------------------------
+4148  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+4296  |Info:    [ResourceManager] Initializing HID interfaces: Success
+4296  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+4296  |Info:    ------------------------------------------------------
+4296  |Info:    |               Start device detection               |
+4296  |Info:    ------------------------------------------------------
+4299  |Info:    ------------------------------------------------------
+4299  |Info:    |             Detecting I2C interfaces               |
+4299  |Info:    ------------------------------------------------------
+4299  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+4299  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+4299  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+4299  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+4299  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+4299  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+4299  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+4299  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+4299  |Info:    ------------------------------------------------------
+4299  |Info:    |               Detecting I2C devices                |
+4299  |Info:    ------------------------------------------------------
+4299  |Info:    ------------------------------------------------------
+4299  |Info:    |            Detecting I2C DIMM modules              |
+4299  |Info:    ------------------------------------------------------
+4299  |Info:    ------------------------------------------------------
+4299  |Info:    |               Detecting I2C PCI devices            |
+4299  |Info:    ------------------------------------------------------
+4300  |Info:    ------------------------------------------------------
+4300  |Info:    |               Detecting HID devices                |
+4300  |Info:    ------------------------------------------------------
+4300  |Info:    ------------------------------------------------------
+4300  |Info:    |            Detecting libusb HID devices            |
+4300  |Info:    ------------------------------------------------------
+4303  |Info:    ------------------------------------------------------
+4303  |Info:    |              Detecting other devices               |
+4303  |Info:    ------------------------------------------------------
+4303  |Info:    [ResourceManager] Calling Post-detection callbacks
+4303  |Info:    ------------------------------------------------------
+4303  |Info:    |                Detection completed                 |
+4303  |Info:    ------------------------------------------------------
+4303  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+4442  |Info:    [ResourceManager] Initializing HID interfaces: Success
+4442  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+4442  |Info:    ------------------------------------------------------
+4442  |Info:    |               Start device detection               |
+4442  |Info:    ------------------------------------------------------
+4445  |Info:    ------------------------------------------------------
+4445  |Info:    |             Detecting I2C interfaces               |
+4445  |Info:    ------------------------------------------------------
+4445  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+4445  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+4445  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+4445  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+4445  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+4445  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+4445  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+4445  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+4445  |Info:    ------------------------------------------------------
+4445  |Info:    |               Detecting I2C devices                |
+4445  |Info:    ------------------------------------------------------
+4445  |Info:    ------------------------------------------------------
+4445  |Info:    |            Detecting I2C DIMM modules              |
+4445  |Info:    ------------------------------------------------------
+4445  |Info:    ------------------------------------------------------
+4445  |Info:    |               Detecting I2C PCI devices            |
+4445  |Info:    ------------------------------------------------------
+4446  |Info:    ------------------------------------------------------
+4446  |Info:    |               Detecting HID devices                |
+4446  |Info:    ------------------------------------------------------
+4446  |Info:    ------------------------------------------------------
+4446  |Info:    |            Detecting libusb HID devices            |
+4446  |Info:    ------------------------------------------------------
+4449  |Info:    ------------------------------------------------------
+4449  |Info:    |              Detecting other devices               |
+4449  |Info:    ------------------------------------------------------
+4449  |Info:    [ResourceManager] Calling Post-detection callbacks
+4449  |Info:    ------------------------------------------------------
+4449  |Info:    |                Detection completed                 |
+4449  |Info:    ------------------------------------------------------
+4449  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+4590  |Info:    [ResourceManager] Initializing HID interfaces: Success
+4590  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+4590  |Info:    ------------------------------------------------------
+4590  |Info:    |               Start device detection               |
+4590  |Info:    ------------------------------------------------------
+4592  |Info:    ------------------------------------------------------
+4592  |Info:    |             Detecting I2C interfaces               |
+4592  |Info:    ------------------------------------------------------
+4592  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+4592  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+4592  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+4592  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+4593  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+4593  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+4593  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+4593  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+4593  |Info:    ------------------------------------------------------
+4593  |Info:    |               Detecting I2C devices                |
+4593  |Info:    ------------------------------------------------------
+4593  |Info:    ------------------------------------------------------
+4593  |Info:    |            Detecting I2C DIMM modules              |
+4593  |Info:    ------------------------------------------------------
+4593  |Info:    ------------------------------------------------------
+4593  |Info:    |               Detecting I2C PCI devices            |
+4593  |Info:    ------------------------------------------------------
+4593  |Info:    ------------------------------------------------------
+4593  |Info:    |               Detecting HID devices                |
+4593  |Info:    ------------------------------------------------------
+4593  |Info:    ------------------------------------------------------
+4593  |Info:    |            Detecting libusb HID devices            |
+4593  |Info:    ------------------------------------------------------
+4596  |Info:    ------------------------------------------------------
+4596  |Info:    |              Detecting other devices               |
+4596  |Info:    ------------------------------------------------------
+4596  |Info:    [ResourceManager] Calling Post-detection callbacks
+4596  |Info:    ------------------------------------------------------
+4596  |Info:    |                Detection completed                 |
+4596  |Info:    ------------------------------------------------------
+4596  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+4741  |Info:    [ResourceManager] Initializing HID interfaces: Success
+4741  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+4741  |Info:    ------------------------------------------------------
+4741  |Info:    |               Start device detection               |
+4741  |Info:    ------------------------------------------------------
+4744  |Info:    ------------------------------------------------------
+4744  |Info:    |             Detecting I2C interfaces               |
+4744  |Info:    ------------------------------------------------------
+4744  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+4744  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+4744  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+4744  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+4744  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+4744  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+4744  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+4744  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+4744  |Info:    ------------------------------------------------------
+4744  |Info:    |               Detecting I2C devices                |
+4744  |Info:    ------------------------------------------------------
+4744  |Info:    ------------------------------------------------------
+4744  |Info:    |            Detecting I2C DIMM modules              |
+4744  |Info:    ------------------------------------------------------
+4744  |Info:    ------------------------------------------------------
+4744  |Info:    |               Detecting I2C PCI devices            |
+4744  |Info:    ------------------------------------------------------
+4745  |Info:    ------------------------------------------------------
+4745  |Info:    |               Detecting HID devices                |
+4745  |Info:    ------------------------------------------------------
+4745  |Info:    ------------------------------------------------------
+4745  |Info:    |            Detecting libusb HID devices            |
+4745  |Info:    ------------------------------------------------------
+4748  |Info:    ------------------------------------------------------
+4748  |Info:    |              Detecting other devices               |
+4748  |Info:    ------------------------------------------------------
+4748  |Info:    [ResourceManager] Calling Post-detection callbacks
+4748  |Info:    ------------------------------------------------------
+4748  |Info:    |                Detection completed                 |
+4748  |Info:    ------------------------------------------------------
+4748  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+4891  |Info:    [ResourceManager] Initializing HID interfaces: Success
+4891  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+4891  |Info:    ------------------------------------------------------
+4891  |Info:    |               Start device detection               |
+4891  |Info:    ------------------------------------------------------
+4894  |Info:    ------------------------------------------------------
+4894  |Info:    |             Detecting I2C interfaces               |
+4894  |Info:    ------------------------------------------------------
+4894  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+4894  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+4894  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+4894  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+4894  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+4894  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+4894  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+4894  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+4894  |Info:    ------------------------------------------------------
+4894  |Info:    |               Detecting I2C devices                |
+4894  |Info:    ------------------------------------------------------
+4894  |Info:    ------------------------------------------------------
+4894  |Info:    |            Detecting I2C DIMM modules              |
+4894  |Info:    ------------------------------------------------------
+4894  |Info:    ------------------------------------------------------
+4894  |Info:    |               Detecting I2C PCI devices            |
+4894  |Info:    ------------------------------------------------------
+4895  |Info:    ------------------------------------------------------
+4895  |Info:    |               Detecting HID devices                |
+4895  |Info:    ------------------------------------------------------
+4895  |Info:    ------------------------------------------------------
+4895  |Info:    |            Detecting libusb HID devices            |
+4895  |Info:    ------------------------------------------------------
+4898  |Info:    ------------------------------------------------------
+4898  |Info:    |              Detecting other devices               |
+4898  |Info:    ------------------------------------------------------
+4898  |Info:    [ResourceManager] Calling Post-detection callbacks
+4898  |Info:    ------------------------------------------------------
+4898  |Info:    |                Detection completed                 |
+4898  |Info:    ------------------------------------------------------
+4898  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+5046  |Info:    [ResourceManager] Initializing HID interfaces: Success
+5046  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+5046  |Info:    ------------------------------------------------------
+5046  |Info:    |               Start device detection               |
+5046  |Info:    ------------------------------------------------------
+5049  |Info:    ------------------------------------------------------
+5049  |Info:    |             Detecting I2C interfaces               |
+5049  |Info:    ------------------------------------------------------
+5049  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+5049  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+5049  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+5049  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+5049  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+5049  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+5049  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+5049  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+5049  |Info:    ------------------------------------------------------
+5049  |Info:    |               Detecting I2C devices                |
+5049  |Info:    ------------------------------------------------------
+5049  |Info:    ------------------------------------------------------
+5049  |Info:    |            Detecting I2C DIMM modules              |
+5049  |Info:    ------------------------------------------------------
+5049  |Info:    ------------------------------------------------------
+5049  |Info:    |               Detecting I2C PCI devices            |
+5049  |Info:    ------------------------------------------------------
+5050  |Info:    ------------------------------------------------------
+5050  |Info:    |               Detecting HID devices                |
+5050  |Info:    ------------------------------------------------------
+5050  |Info:    ------------------------------------------------------
+5050  |Info:    |            Detecting libusb HID devices            |
+5050  |Info:    ------------------------------------------------------
+5053  |Info:    ------------------------------------------------------
+5053  |Info:    |              Detecting other devices               |
+5053  |Info:    ------------------------------------------------------
+5053  |Info:    [ResourceManager] Calling Post-detection callbacks
+5053  |Info:    ------------------------------------------------------
+5053  |Info:    |                Detection completed                 |
+5053  |Info:    ------------------------------------------------------
+5053  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+5200  |Info:    [ResourceManager] Initializing HID interfaces: Success
+5200  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+5201  |Info:    ------------------------------------------------------
+5201  |Info:    |               Start device detection               |
+5201  |Info:    ------------------------------------------------------
+5203  |Info:    ------------------------------------------------------
+5203  |Info:    |             Detecting I2C interfaces               |
+5203  |Info:    ------------------------------------------------------
+5203  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+5203  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+5203  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+5203  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+5203  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+5203  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+5204  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+5204  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+5204  |Info:    ------------------------------------------------------
+5204  |Info:    |               Detecting I2C devices                |
+5204  |Info:    ------------------------------------------------------
+5204  |Info:    ------------------------------------------------------
+5204  |Info:    |            Detecting I2C DIMM modules              |
+5204  |Info:    ------------------------------------------------------
+5204  |Info:    ------------------------------------------------------
+5204  |Info:    |               Detecting I2C PCI devices            |
+5204  |Info:    ------------------------------------------------------
+5204  |Info:    ------------------------------------------------------
+5204  |Info:    |               Detecting HID devices                |
+5204  |Info:    ------------------------------------------------------
+5204  |Info:    ------------------------------------------------------
+5204  |Info:    |            Detecting libusb HID devices            |
+5204  |Info:    ------------------------------------------------------
+5207  |Info:    ------------------------------------------------------
+5207  |Info:    |              Detecting other devices               |
+5207  |Info:    ------------------------------------------------------
+5207  |Info:    [ResourceManager] Calling Post-detection callbacks
+5207  |Info:    ------------------------------------------------------
+5207  |Info:    |                Detection completed                 |
+5207  |Info:    ------------------------------------------------------
+5207  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+5345  |Info:    [ResourceManager] Initializing HID interfaces: Success
+5345  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+5345  |Info:    ------------------------------------------------------
+5345  |Info:    |               Start device detection               |
+5345  |Info:    ------------------------------------------------------
+5348  |Info:    ------------------------------------------------------
+5348  |Info:    |             Detecting I2C interfaces               |
+5348  |Info:    ------------------------------------------------------
+5348  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+5348  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+5348  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+5348  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+5348  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+5348  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+5348  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+5348  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+5348  |Info:    ------------------------------------------------------
+5348  |Info:    |               Detecting I2C devices                |
+5348  |Info:    ------------------------------------------------------
+5348  |Info:    ------------------------------------------------------
+5348  |Info:    |            Detecting I2C DIMM modules              |
+5348  |Info:    ------------------------------------------------------
+5348  |Info:    ------------------------------------------------------
+5348  |Info:    |               Detecting I2C PCI devices            |
+5348  |Info:    ------------------------------------------------------
+5349  |Info:    ------------------------------------------------------
+5349  |Info:    |               Detecting HID devices                |
+5349  |Info:    ------------------------------------------------------
+5349  |Info:    ------------------------------------------------------
+5349  |Info:    |            Detecting libusb HID devices            |
+5349  |Info:    ------------------------------------------------------
+5352  |Info:    ------------------------------------------------------
+5352  |Info:    |              Detecting other devices               |
+5352  |Info:    ------------------------------------------------------
+5352  |Info:    [ResourceManager] Calling Post-detection callbacks
+5352  |Info:    ------------------------------------------------------
+5352  |Info:    |                Detection completed                 |
+5352  |Info:    ------------------------------------------------------
+5352  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+5514  |Info:    [ResourceManager] Initializing HID interfaces: Success
+5514  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+5514  |Info:    ------------------------------------------------------
+5514  |Info:    |               Start device detection               |
+5514  |Info:    ------------------------------------------------------
+5517  |Info:    ------------------------------------------------------
+5517  |Info:    |             Detecting I2C interfaces               |
+5517  |Info:    ------------------------------------------------------
+5517  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+5517  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+5517  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+5517  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+5517  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+5517  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+5517  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+5517  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+5517  |Info:    ------------------------------------------------------
+5517  |Info:    |               Detecting I2C devices                |
+5517  |Info:    ------------------------------------------------------
+5517  |Info:    ------------------------------------------------------
+5517  |Info:    |            Detecting I2C DIMM modules              |
+5517  |Info:    ------------------------------------------------------
+5517  |Info:    ------------------------------------------------------
+5517  |Info:    |               Detecting I2C PCI devices            |
+5517  |Info:    ------------------------------------------------------
+5518  |Info:    ------------------------------------------------------
+5518  |Info:    |               Detecting HID devices                |
+5518  |Info:    ------------------------------------------------------
+5518  |Info:    ------------------------------------------------------
+5518  |Info:    |            Detecting libusb HID devices            |
+5518  |Info:    ------------------------------------------------------
+5521  |Info:    ------------------------------------------------------
+5521  |Info:    |              Detecting other devices               |
+5521  |Info:    ------------------------------------------------------
+5521  |Info:    [ResourceManager] Calling Post-detection callbacks
+5521  |Info:    ------------------------------------------------------
+5521  |Info:    |                Detection completed                 |
+5521  |Info:    ------------------------------------------------------
+5521  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+5708  |Info:    [ResourceManager] Initializing HID interfaces: Success
+5708  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+5708  |Info:    ------------------------------------------------------
+5708  |Info:    |               Start device detection               |
+5708  |Info:    ------------------------------------------------------
+5710  |Info:    ------------------------------------------------------
+5710  |Info:    |             Detecting I2C interfaces               |
+5710  |Info:    ------------------------------------------------------
+5710  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+5710  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+5711  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+5711  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+5711  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+5711  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+5711  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+5711  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+5711  |Info:    ------------------------------------------------------
+5711  |Info:    |               Detecting I2C devices                |
+5711  |Info:    ------------------------------------------------------
+5711  |Info:    ------------------------------------------------------
+5711  |Info:    |            Detecting I2C DIMM modules              |
+5711  |Info:    ------------------------------------------------------
+5711  |Info:    ------------------------------------------------------
+5711  |Info:    |               Detecting I2C PCI devices            |
+5711  |Info:    ------------------------------------------------------
+5711  |Info:    ------------------------------------------------------
+5711  |Info:    |               Detecting HID devices                |
+5711  |Info:    ------------------------------------------------------
+5711  |Info:    ------------------------------------------------------
+5711  |Info:    |            Detecting libusb HID devices            |
+5711  |Info:    ------------------------------------------------------
+5715  |Info:    ------------------------------------------------------
+5715  |Info:    |              Detecting other devices               |
+5715  |Info:    ------------------------------------------------------
+5715  |Info:    [ResourceManager] Calling Post-detection callbacks
+5715  |Info:    ------------------------------------------------------
+5715  |Info:    |                Detection completed                 |
+5715  |Info:    ------------------------------------------------------
+5715  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+5869  |Info:    [ResourceManager] Initializing HID interfaces: Success
+5869  |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+5870  |Info:    ------------------------------------------------------
+5870  |Info:    |               Start device detection               |
+5870  |Info:    ------------------------------------------------------
+5872  |Info:    ------------------------------------------------------
+5872  |Info:    |             Detecting I2C interfaces               |
+5872  |Info:    ------------------------------------------------------
+5872  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+5872  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+5872  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+5872  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+5872  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+5878  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+5878  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+5878  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+5878  |Info:    ------------------------------------------------------
+5878  |Info:    |               Detecting I2C devices                |
+5878  |Info:    ------------------------------------------------------
+5878  |Info:    ------------------------------------------------------
+5878  |Info:    |            Detecting I2C DIMM modules              |
+5878  |Info:    ------------------------------------------------------
+5878  |Info:    ------------------------------------------------------
+5878  |Info:    |               Detecting I2C PCI devices            |
+5878  |Info:    ------------------------------------------------------
+5878  |Info:    ------------------------------------------------------
+5878  |Info:    |               Detecting HID devices                |
+5878  |Info:    ------------------------------------------------------
+5878  |Info:    ------------------------------------------------------
+5878  |Info:    |            Detecting libusb HID devices            |
+5878  |Info:    ------------------------------------------------------
+5882  |Info:    ------------------------------------------------------
+5882  |Info:    |              Detecting other devices               |
+5882  |Info:    ------------------------------------------------------
+5882  |Info:    [ResourceManager] Calling Post-detection callbacks
+5882  |Info:    ------------------------------------------------------
+5882  |Info:    |                Detection completed                 |
+5882  |Info:    ------------------------------------------------------
+5882  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+54425 |Info:    [ResourceManager] Initializing HID interfaces: Success
+54425 |Info:    ------------------------------------------------------
+54425 |Info:    |               Start device detection               |
+54425 |Info:    ------------------------------------------------------
+54427 |Info:    ------------------------------------------------------
+54427 |Info:    |             Detecting I2C interfaces               |
+54427 |Info:    ------------------------------------------------------
+54427 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+54427 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+54428 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+54428 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+54428 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+54428 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+54428 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+54428 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+54428 |Info:    ------------------------------------------------------
+54428 |Info:    |               Detecting I2C devices                |
+54428 |Info:    ------------------------------------------------------
+54428 |Info:    ------------------------------------------------------
+54428 |Info:    |            Detecting I2C DIMM modules              |
+54428 |Info:    ------------------------------------------------------
+54428 |Info:    ------------------------------------------------------
+54428 |Info:    |               Detecting I2C PCI devices            |
+54428 |Info:    ------------------------------------------------------
+54428 |Info:    ------------------------------------------------------
+54428 |Info:    |               Detecting HID devices                |
+54428 |Info:    ------------------------------------------------------
+54428 |Info:    ------------------------------------------------------
+54428 |Info:    |            Detecting libusb HID devices            |
+54428 |Info:    ------------------------------------------------------
+54431 |Info:    ------------------------------------------------------
+54431 |Info:    |              Detecting other devices               |
+54431 |Info:    ------------------------------------------------------
+54431 |Info:    [ResourceManager] Calling Post-detection callbacks
+54431 |Info:    ------------------------------------------------------
+54431 |Info:    |                Detection completed                 |
+54431 |Info:    ------------------------------------------------------
+54431 |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+54585 |Info:    [ResourceManager] Initializing HID interfaces: Success
+54585 |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+54585 |Info:    ------------------------------------------------------
+54585 |Info:    |               Start device detection               |
+54585 |Info:    ------------------------------------------------------
+54588 |Info:    ------------------------------------------------------
+54588 |Info:    |             Detecting I2C interfaces               |
+54588 |Info:    ------------------------------------------------------
+54588 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+54588 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+54588 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+54588 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+54588 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+54588 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+54588 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+54588 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+54588 |Info:    ------------------------------------------------------
+54588 |Info:    |               Detecting I2C devices                |
+54588 |Info:    ------------------------------------------------------
+54588 |Info:    ------------------------------------------------------
+54588 |Info:    |            Detecting I2C DIMM modules              |
+54588 |Info:    ------------------------------------------------------
+54588 |Info:    ------------------------------------------------------
+54588 |Info:    |               Detecting I2C PCI devices            |
+54588 |Info:    ------------------------------------------------------
+54589 |Info:    ------------------------------------------------------
+54589 |Info:    |               Detecting HID devices                |
+54589 |Info:    ------------------------------------------------------
+54589 |Info:    ------------------------------------------------------
+54589 |Info:    |            Detecting libusb HID devices            |
+54589 |Info:    ------------------------------------------------------
+54592 |Info:    ------------------------------------------------------
+54592 |Info:    |              Detecting other devices               |
+54592 |Info:    ------------------------------------------------------
+54592 |Info:    [ResourceManager] Calling Post-detection callbacks
+54592 |Info:    ------------------------------------------------------
+54592 |Info:    |                Detection completed                 |
+54592 |Info:    ------------------------------------------------------
+54592 |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+54711 |Info:    [ResourceManager] Initializing HID interfaces: Success
+54711 |Info:    ------------------------------------------------------
+54711 |Info:    |               Start device detection               |
+54711 |Info:    ------------------------------------------------------
+54713 |Info:    ------------------------------------------------------
+54713 |Info:    |             Detecting I2C interfaces               |
+54713 |Info:    ------------------------------------------------------
+54713 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+54713 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+54713 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+54713 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+54713 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+54713 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+54713 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+54714 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+54714 |Info:    ------------------------------------------------------
+54714 |Info:    |               Detecting I2C devices                |
+54714 |Info:    ------------------------------------------------------
+54714 |Info:    ------------------------------------------------------
+54714 |Info:    |            Detecting I2C DIMM modules              |
+54714 |Info:    ------------------------------------------------------
+54714 |Info:    ------------------------------------------------------
+54714 |Info:    |               Detecting I2C PCI devices            |
+54714 |Info:    ------------------------------------------------------
+54714 |Info:    ------------------------------------------------------
+54714 |Info:    |               Detecting HID devices                |
+54714 |Info:    ------------------------------------------------------
+54714 |Info:    ------------------------------------------------------
+54714 |Info:    |            Detecting libusb HID devices            |
+54714 |Info:    ------------------------------------------------------
+54717 |Info:    ------------------------------------------------------
+54717 |Info:    |              Detecting other devices               |
+54717 |Info:    ------------------------------------------------------
+54717 |Info:    [ResourceManager] Calling Post-detection callbacks
+54717 |Info:    ------------------------------------------------------
+54717 |Info:    |                Detection completed                 |
+54717 |Info:    ------------------------------------------------------
+54717 |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+88327 |Info:    [ResourceManager] Initializing HID interfaces: Success
+88327 |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+88327 |Info:    ------------------------------------------------------
+88327 |Info:    |               Start device detection               |
+88327 |Info:    ------------------------------------------------------
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    |             Detecting I2C interfaces               |
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+88330 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+88330 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+88330 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+88330 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+88330 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+88330 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+88330 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    |               Detecting I2C devices                |
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    |            Detecting I2C DIMM modules              |
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    |               Detecting I2C PCI devices            |
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    |               Detecting HID devices                |
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    ------------------------------------------------------
+88330 |Info:    |            Detecting libusb HID devices            |
+88331 |Info:    ------------------------------------------------------
+88334 |Info:    ------------------------------------------------------
+88334 |Info:    |              Detecting other devices               |
+88334 |Info:    ------------------------------------------------------
+88334 |Info:    [ResourceManager] Calling Post-detection callbacks
+88334 |Info:    ------------------------------------------------------
+88334 |Info:    |                Detection completed                 |
+88334 |Info:    ------------------------------------------------------
+88334 |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+88492 |Info:    [ResourceManager] Initializing HID interfaces: Success
+88492 |Info:    ------------------------------------------------------
+88492 |Info:    |               Start device detection               |
+88492 |Info:    ------------------------------------------------------
+88495 |Info:    ------------------------------------------------------
+88495 |Info:    |             Detecting I2C interfaces               |
+88495 |Info:    ------------------------------------------------------
+88495 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+88495 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+88495 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+88495 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+88496 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+88496 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+88496 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+88496 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+88496 |Info:    ------------------------------------------------------
+88496 |Info:    |               Detecting I2C devices                |
+88496 |Info:    ------------------------------------------------------
+88496 |Info:    ------------------------------------------------------
+88496 |Info:    |            Detecting I2C DIMM modules              |
+88496 |Info:    ------------------------------------------------------
+88496 |Info:    ------------------------------------------------------
+88496 |Info:    |               Detecting I2C PCI devices            |
+88496 |Info:    ------------------------------------------------------
+88496 |Info:    ------------------------------------------------------
+88496 |Info:    |               Detecting HID devices                |
+88496 |Info:    ------------------------------------------------------
+88496 |Info:    ------------------------------------------------------
+88496 |Info:    |            Detecting libusb HID devices            |
+88496 |Info:    ------------------------------------------------------
+88499 |Info:    ------------------------------------------------------
+88499 |Info:    |              Detecting other devices               |
+88499 |Info:    ------------------------------------------------------
+88499 |Info:    [ResourceManager] Calling Post-detection callbacks
+88499 |Info:    ------------------------------------------------------
+88499 |Info:    |                Detection completed                 |
+88499 |Info:    ------------------------------------------------------
+88499 |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+88652 |Info:    [ResourceManager] Initializing HID interfaces: Success
+88652 |Info:    ------------------------------------------------------
+88652 |Info:    |               Start device detection               |
+88652 |Info:    ------------------------------------------------------
+88656 |Info:    ------------------------------------------------------
+88656 |Info:    |             Detecting I2C interfaces               |
+88656 |Info:    ------------------------------------------------------
+88656 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+88656 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+88656 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+88656 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+88656 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+88656 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+88656 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+88656 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+88656 |Info:    ------------------------------------------------------
+88656 |Info:    |               Detecting I2C devices                |
+88656 |Info:    ------------------------------------------------------
+88656 |Info:    ------------------------------------------------------
+88656 |Info:    |            Detecting I2C DIMM modules              |
+88656 |Info:    ------------------------------------------------------
+88656 |Info:    ------------------------------------------------------
+88656 |Info:    |               Detecting I2C PCI devices            |
+88656 |Info:    ------------------------------------------------------
+88657 |Info:    ------------------------------------------------------
+88657 |Info:    |               Detecting HID devices                |
+88657 |Info:    ------------------------------------------------------
+88657 |Info:    ------------------------------------------------------
+88657 |Info:    |            Detecting libusb HID devices            |
+88657 |Info:    ------------------------------------------------------
+88660 |Info:    ------------------------------------------------------
+88660 |Info:    |              Detecting other devices               |
+88660 |Info:    ------------------------------------------------------
+88660 |Info:    [ResourceManager] Calling Post-detection callbacks
+88660 |Info:    ------------------------------------------------------
+88660 |Info:    |                Detection completed                 |
+88660 |Info:    ------------------------------------------------------
+88660 |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+88803 |Info:    [ResourceManager] Initializing HID interfaces: Success
+88803 |Info:    ------------------------------------------------------
+88803 |Info:    |               Start device detection               |
+88803 |Info:    ------------------------------------------------------
+88806 |Info:    ------------------------------------------------------
+88806 |Info:    |             Detecting I2C interfaces               |
+88806 |Info:    ------------------------------------------------------
+88806 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+88807 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+88807 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+88807 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+88807 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+88807 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+88807 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+88807 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+88807 |Info:    ------------------------------------------------------
+88807 |Info:    |               Detecting I2C devices                |
+88807 |Info:    ------------------------------------------------------
+88807 |Info:    ------------------------------------------------------
+88807 |Info:    |            Detecting I2C DIMM modules              |
+88807 |Info:    ------------------------------------------------------
+88807 |Info:    ------------------------------------------------------
+88807 |Info:    |               Detecting I2C PCI devices            |
+88807 |Info:    ------------------------------------------------------
+88807 |Info:    ------------------------------------------------------
+88807 |Info:    |               Detecting HID devices                |
+88807 |Info:    ------------------------------------------------------
+88807 |Info:    ------------------------------------------------------
+88807 |Info:    |            Detecting libusb HID devices            |
+88807 |Info:    ------------------------------------------------------
+88811 |Info:    ------------------------------------------------------
+88811 |Info:    |              Detecting other devices               |
+88811 |Info:    ------------------------------------------------------
+88811 |Info:    [ResourceManager] Calling Post-detection callbacks
+88811 |Info:    ------------------------------------------------------
+88811 |Info:    |                Detection completed                 |
+88811 |Info:    ------------------------------------------------------
+88811 |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+88964 |Info:    [ResourceManager] Initializing HID interfaces: Success
+88964 |Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+88964 |Info:    ------------------------------------------------------
+88964 |Info:    |               Start device detection               |
+88964 |Info:    ------------------------------------------------------
+88967 |Info:    ------------------------------------------------------
+88967 |Info:    |             Detecting I2C interfaces               |
+88967 |Info:    ------------------------------------------------------
+88967 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+88967 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+88967 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+88967 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+88967 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+88967 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+88967 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+88967 |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+88967 |Info:    ------------------------------------------------------
+88967 |Info:    |               Detecting I2C devices                |
+88967 |Info:    ------------------------------------------------------
+88967 |Info:    ------------------------------------------------------
+88967 |Info:    |            Detecting I2C DIMM modules              |
+88967 |Info:    ------------------------------------------------------
+88967 |Info:    ------------------------------------------------------
+88967 |Info:    |               Detecting I2C PCI devices            |
+88967 |Info:    ------------------------------------------------------
+88968 |Info:    ------------------------------------------------------
+88968 |Info:    |               Detecting HID devices                |
+88968 |Info:    ------------------------------------------------------
+88968 |Info:    ------------------------------------------------------
+88968 |Info:    |            Detecting libusb HID devices            |
+88968 |Info:    ------------------------------------------------------
+88971 |Info:    ------------------------------------------------------
+88971 |Info:    |              Detecting other devices               |
+88971 |Info:    ------------------------------------------------------
+88971 |Info:    [ResourceManager] Calling Post-detection callbacks
+88971 |Info:    ------------------------------------------------------
+88971 |Info:    |                Detection completed                 |
+88971 |Info:    ------------------------------------------------------
+88971 |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+181609|Info:    [ResourceManager] Initializing HID interfaces: Success
+181609|Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+181609|Info:    ------------------------------------------------------
+181609|Info:    |               Start device detection               |
+181609|Info:    ------------------------------------------------------
+181612|Info:    ------------------------------------------------------
+181612|Info:    |             Detecting I2C interfaces               |
+181612|Info:    ------------------------------------------------------
+181612|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:28E1 Subsystem: 17AA:3D06
+181612|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+181612|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 17AA:3807
+181612|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:28E1 Subsystem: 17AA:3D06
+181612|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:28E1 Subsystem: 17AA:3D06
+181612|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-SYNA2BA6:00 Device 0000:0000 Subsystem: 0000:0000
+181612|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+181612|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:28E1 Subsystem: 17AA:3D06
+181612|Info:    ------------------------------------------------------
+181612|Info:    |               Detecting I2C devices                |
+181612|Info:    ------------------------------------------------------
+181612|Info:    ------------------------------------------------------
+181612|Info:    |            Detecting I2C DIMM modules              |
+181612|Info:    ------------------------------------------------------
+181612|Info:    ------------------------------------------------------
+181612|Info:    |               Detecting I2C PCI devices            |
+181612|Info:    ------------------------------------------------------
+181613|Info:    ------------------------------------------------------
+181613|Info:    |               Detecting HID devices                |
+181613|Info:    ------------------------------------------------------
+181613|Info:    ------------------------------------------------------
+181613|Info:    |            Detecting libusb HID devices            |
+181613|Info:    ------------------------------------------------------
+181616|Info:    ------------------------------------------------------
+181616|Info:    |              Detecting other devices               |
+181616|Info:    ------------------------------------------------------
+181616|Info:    [ResourceManager] Calling Post-detection callbacks
+181616|Info:    ------------------------------------------------------
+181616|Info:    |                Detection completed                 |
+181616|Info:    ------------------------------------------------------
+181616|Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>

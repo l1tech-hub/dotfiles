@@ -1,0 +1,11 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260620_121532
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: warm-yellow.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for warm-yellow
+0     |Info:    [ProfileManager] Found file: warm-yellow-mouse-only.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for warm-yellow-mouse-only
+0     |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow

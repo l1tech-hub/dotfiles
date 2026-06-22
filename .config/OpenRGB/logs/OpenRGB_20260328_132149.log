@@ -1,0 +1,58 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260328_132149
+====================================================================================================
+
+1     |Info:    [ProfileManager] Found file: G102-warm-yellow.orp attempting to validate header
+2     |Info:    [ProfileManager] Valid v5 profile found for G102-warm-yellow
+1080  |Info:    [ResourceManager] Initializing HID interfaces: Success
+1080  |Info:    ------------------------------------------------------
+1080  |Info:    |               Start device detection               |
+1080  |Info:    ------------------------------------------------------
+1082  |Info:    ------------------------------------------------------
+1082  |Info:    |             Detecting I2C interfaces               |
+1082  |Info:    ------------------------------------------------------
+1082  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 8086:A78B Subsystem: 17AA:3D07
+1082  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 8086:A78B Subsystem: 17AA:3D07
+1082  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+1082  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 8086:A78B Subsystem: 17AA:3D07
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:A78B Subsystem: 17AA:3D07
+1083  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 0000:0000 Subsystem: 0000:0000
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 8086:A78B Subsystem: 17AA:3D07
+1083  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 0000:0000 Subsystem: 0000:0000
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 8086:A78B Subsystem: 17AA:3D07
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 8086:A78B Subsystem: 17AA:3D07
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 8086:A78B Subsystem: 17AA:3D07
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 8086:7A23 Subsystem: 17AA:3807
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 8086:A78B Subsystem: 17AA:3D07
+1083  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1083  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 0000:0000 Subsystem: 0000:0000
+1083  |Info:    ------------------------------------------------------
+1083  |Info:    |               Detecting I2C devices                |
+1083  |Info:    ------------------------------------------------------
+4559  |Info:    ------------------------------------------------------
+4559  |Info:    |            Detecting I2C DIMM modules              |
+4559  |Info:    ------------------------------------------------------
+5898  |Info:    ------------------------------------------------------
+5898  |Info:    |               Detecting I2C PCI devices            |
+5898  |Info:    ------------------------------------------------------
+5898  |Info:    ------------------------------------------------------
+5898  |Info:    |               Detecting HID devices                |
+5898  |Info:    ------------------------------------------------------
+5949  |Info:    [ROYUAN Akko Multi-modes Keyboard-B] Registering RGB controller
+5952  |Info:    [Logitech G203 Lightsync] Registering RGB controller
+5952  |Info:    ------------------------------------------------------
+5952  |Info:    |            Detecting libusb HID devices            |
+5952  |Info:    ------------------------------------------------------
+5961  |Info:    ------------------------------------------------------
+5961  |Info:    |              Detecting other devices               |
+5961  |Info:    ------------------------------------------------------
+5972  |Info:    [ResourceManager] Calling Post-detection callbacks
+5972  |Info:    ------------------------------------------------------
+5972  |Info:    |                Detection completed                 |
+5972  |Info:    ------------------------------------------------------
+5973  |Info:    [ProfileManager] Profile loading: Succeeded for ROYUAN Akko Multi-modes Keyboard-B @ HID: /dev/hidraw2
+5973  |Info:    [ProfileManager] Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw4
